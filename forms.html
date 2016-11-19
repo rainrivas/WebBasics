@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form Demo</title>
+	</head>
+	<body>
+		<p>Random garbage</p>
+		<input type="text">
+		<input type="color">
+		<input type="radio">
+		<input type="password">
+		
+		<h1>Login (AKA useless thing that makes a get to Wiki passing UN and PW</h1>
+		<!-- Action: Where the form sends data to -->
+		<!-- Method: what HTTP Method (get/post) -->
+		<!-- by deafult it will do a GET on the current page if no action/method is requested -->
+		<h2>The baddy Form</h2>
+		<form action="http://wikipedia.org">
+			<label>
+				username:
+				<input name="username" type="text" placeholder="username">
+			</label>
+			<label>
+				password:
+				<input name="password" type="password" placeholder="password">
+			</label>
+			<!-- <button>Submit</button> -->
+			<input type="Submit">
+		</form>
+		Some text for the aestethics showing that forms block themselves
+		<!-- by deafult it will do a GET on the current page if no action/method is requested -->
+		<h2>The one with validations</h2>
+		<form action="http://wikipedia.org">
+			<label for="username">email:</label>
+			<input id="username" type="email" placeholder="email" required>
+			<label for="password">password:</label>
+			<input id="password" type="password" placeholder="password" required="true">
+			<input type="Submit">
+		</form>
+	</body>
+</html>
