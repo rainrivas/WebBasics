@@ -1,29 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Fake Form</title>
-</head>
-<body>
-<h1>Register</h1>
-<form>
-	<p>
-		<label for="firstName">First Name:</label>
-		<input type="text" name="firstName" placeholder="First Name">
-		<label for="lastName">Last Name:</label>
-		<input type="text" name="lastName" placeholder="Last Name">
-	</p>
-	<p>
-		<label for="male">Male:</label>
-		<input name="gender" type="radio" value="male">
-		<label for="female">Female:</label>
-		<input name="gender" type="radio" value="female">
-		<label for="other">Other:</label>
-		<input name="gender" type="radio" value="other">
-	</p>
-	<p>
-		<label for="email">Email:</label>
-		<input name="email" type="email" placeholder="your email">
-	</p>
-</form>
-</body>
+	<head>
+		<title>Registration Form</title>
+	</head>
+	<body>
+		<h1>Register</h1>
+		<form>
+			<div>
+				<label for="firstName">First Name:</label>
+				<input type="text" id="firstName" name="firstName" required placeholder="First Name">
+				<label for="lastName">Last Name:</label>
+				<input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+			</div>
+			<div>
+				<label for="male">Male:</label>
+				<input name="gender" id="male" type="radio" value="male">
+				<label for="female">Female:</label>
+				<input name="gender" id="female" type="radio" value="female">
+				<label for="other">Other:</label>
+				<input name="gender" id="other" type="radio" value="other">
+			</div>
+			<div>
+				<label>
+					Email:
+					<input id="email" name="email" type="email" required placeholder="your email">
+				</label>
+				<label>
+					Password:
+					<input name="password" type="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+				</label>
+			</div>
+			<div>
+				<label>
+					Birthday:
+					<select name="month">
+						<option value="Month" selected disabled>Month</option>
+						<option value="jan">Janary</option>
+						<option value="feb">Februrary</option>
+						<option value="3">March</option>
+						<option value="4">April</option>
+						<option value="5">May</option>
+						<option value="6">June</option>
+						<option value="jul">July</option>
+					</select>
+					<select name="day">
+						<option value="Day" selected disabled>Day</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+					</select>
+					<select name="year">
+						<option value="Year" selected disabled>Year</option>
+						<option value="2000">2000</option>
+						<option value="2001">2001</option>
+						<option value="2002">2002</option>
+						<option value="2003">2003</option>
+						<option value="2004">2004</option>
+						<option value="2005">2005</option>
+						<option value="2006">2006</option>
+						<option value="2007">2007</option>
+					</select>
+				</label>
+			</div>
+			<div>
+				<label for="tnc">I agree to the terms and conditions</label>
+				<input type="checkbox" id="tnc" name="tnc">
+			</div>
+			<input type="submit">
+		</form>
+	</body>
 </html>
