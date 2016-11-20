@@ -1,0 +1,12 @@
+li {
+    border: 2px dashed green;
+}
+
+#specialCss {
+    color: red;
+    background-color: yellow;
+}
+
+.completed {
+	text-decoration: line-through;
+}
