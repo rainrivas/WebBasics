@@ -49,23 +49,27 @@ a[href="http://www.ubuntu.com/"] {
     background: orange;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     display: square;
 }
 
 
 /*nth of type selector*/
-ul:nth-of-type(3){ /* Selects the third list found */
-	background: green;
+
+ul:nth-of-type(3) {
+    /* Selects the third list found */
+    background: green;
 }
 
-li:nth-of-type(3){ /* Selects the third element in every list */
-	background: blue;
+li:nth-of-type(3) {
+    /* Selects the third element in every list */
+    background: blue;
 }
 
-/*this is not working cause I broked it*/
-ul:nth-of-child(3) > li:nth-of-type(2){
-    font-size: 25px;body
+ul:nth-of-type(3) li:nth-of-type(2) {
+    font-size: 25px;
+    body
 }
+
 
 /*Good Article: https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048*/
