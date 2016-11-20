@@ -1,0 +1,26 @@
+/*showing different level of importance for specificity*/
+
+
+/*Type Selectors*/
+
+li {}
+
+li a {}
+
+li + a {}
+
+
+/*Class, Attribute, and Pseudo-Class Selectors*/
+
+.hello {}
+
+input[type="text"] {}
+
+a:hover {}
+
+input:checked {}
+
+
+/*Id Selectors*/
+
+#hello
