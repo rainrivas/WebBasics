@@ -1,0 +1,26 @@
+h1 {
+    color: #1111FF;
+    /*
+    border-color: purple;
+    border-width: 5px;
+    border-style: solid;
+    */
+    border: 3px dashed grey;
+}
+
+li {
+    color: rgb(0, 255, 0);
+}
+
+h4 {
+    color: rgba(0, 0, 255, 0.8);
+    /*RGBA - Alpha - determines how transparent. Range is 0-1*/
+    background: rgb(255, 100, 80);
+}
+
+body {
+    /*Defaults to tiled horiz+vert*/
+    background: url(http://d28xhcgddm1buq.cloudfront.net/product-images/lake-superior-driftwood-50-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
