@@ -1,12 +1,71 @@
+/*element selctor*/
+
 li {
     border: 2px dashed green;
 }
 
+
+/*class selector*/
+
 #specialCss {
-    color: red;
+    /*color: red;*/
     background-color: yellow;
 }
 
+
+/*class selector*/
+
 .completed {
-	text-decoration: line-through;
+    text-decoration: line-through;
 }
+
+
+/*star selector*/
+
+* {
+    color: darkgrey;
+}
+
+
+/*descendant selector*/
+
+li a {
+    /*every anchor tag inside an li*/
+    color: red;
+}
+
+
+/*adjacent selector -- selects all siblings on the SAME level as the tags*/
+
+h4 + ul {
+    border: 4px solid red;
+}
+
+
+/*attribute selector*/
+
+a[href="http://www.ubuntu.com/"] {
+    /*modify every ubuntu link*/
+    background: orange;
+}
+
+input[type="checkbox"]{
+    display: square;
+}
+
+
+/*nth of type selector*/
+ul:nth-of-type(3){ /* Selects the third list found */
+	background: green;
+}
+
+li:nth-of-type(3){ /* Selects the third element in every list */
+	background: blue;
+}
+
+/*this is not working cause I broked it*/
+ul:nth-of-child(3) > li:nth-of-type(2){
+    font-size: 25px;body
+}
+
+/*Good Article: https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048*/
