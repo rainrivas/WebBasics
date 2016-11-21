@@ -1,11 +1,11 @@
 /*font-family*/
 
 h1 {
-    font-family: Helvetica;
+    font-family: Indie Flower;
 }
 
 p {
-    font-family: Arial;
+    font-family: Raleway;
 }
 
 
@@ -33,7 +33,7 @@ span {
 /*font-weight*/
 p{
 	/*some fonts let you use a number value from 100-800 using 100 scale (100, 200, 300, etc)*/
-	font-weight: bold;
+	font-weight: normal;
 }
 
 /*line-height*/
