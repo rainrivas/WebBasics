@@ -1,0 +1,21 @@
+p {
+    /*Content - Width and Height*/
+    /*width: 200px;*/
+    /* 50% of the parent element, moves as window resizes */
+    width: 50%;
+    /*height: 300px;*/
+    /*Border*/
+    border: 2px solid blue;
+    /*Padding*/
+    /* sets padding on all 4 sides evenly */
+    /*padding: 10px;*/
+    padding-left: 40px;
+    /*Margin*/
+    margin-top: 500px;
+    /*can set margin evenly by just using "margin"*/
+    /*can also just use "margin" and pass 4 options like in border*/
+    /*this works as top, left, bottom, right;*/
+    /*margin: 20px 40px 500px 100px;*/
+    /*margin: 0 auto 0 auto;*/
+    margin: 0 auto;
+}
