@@ -1,0 +1,29 @@
+body {
+    font: Source Sans Pro;
+    border: 20px #b3bbbf solid;
+    text-align: left;
+    margin: 1% 25% 1% 25%;
+    padding: 2%;
+}
+
+h2 {
+    color: #273345;
+}
+
+.dateHeading {
+    color: #5594B5;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+div p:nth-of-type(1) {
+    border-left: 4px solid #b3bbbf;
+    height: 50%;
+    padding: 1%;
+
+}
+
+div{
+	border-bottom: 2px solid #b3bbbf;
+	margin-bottom: 5%;
+}
