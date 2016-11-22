@@ -5,3 +5,5 @@ Articles for References and Usefulness
 [Code Pen](http://codepen.io)
 [GitHub Gists](https://gist.github.com/)
 [Google Fonts](https://www.google.com/fonts)
+[Bootstrap](http://getbootstrap.com/)
+[jQuery CDNs](https://code.jquery.com/)
