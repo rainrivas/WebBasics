@@ -1,29 +1,52 @@
 body {
-    font: Source Sans Pro;
+    font-family: Source Sans Pro;
     border: 20px #b3bbbf solid;
     text-align: left;
-    margin: 1% 25% 1% 25%;
+    max-width: 700px;
+    width: 80%;
+    /*margin: 1% 25% 1% 25%;*/
+    margin: 1% auto;
     padding: 2%;
 }
 
 h2 {
     color: #273345;
+    font-weight: 700;
+    font-size: 2.0rem;
 }
 
 .dateHeading {
     color: #5594B5;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    /*rem is relative to ROOT element (proportional fonts without worrying about what's nexted in what)*/
+    letter-spacing: 0.2rem;
 }
 
-div p:nth-of-type(1) {
-    border-left: 4px solid #b3bbbf;
-    height: 50%;
-    padding: 1%;
-
+.quote {
+    border-left: 5px solid #b3bbbf;
+    padding-left: 1%;
 }
 
-div{
-	border-bottom: 2px solid #b3bbbf;
-	margin-bottom: 5%;
+.post{
+	margin-bottom: 2%;
+}
+
+/* Glyph, by Harry Roberts */
+
+hr {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+hr:after {
+    content: "//";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
 }
