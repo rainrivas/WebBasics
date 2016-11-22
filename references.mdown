@@ -1,0 +1,7 @@
+Articles for References and Usefulness
+
+[30 CSS Selectors to Memorize](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+[Mozilla Development Network](https://developer.mozilla.org/en-US/)
+[Code Pen](http://codepen.io)
+[GitHub Gists](https://gist.github.com/)
+[Google Fonts](https://www.google.com/fonts)
