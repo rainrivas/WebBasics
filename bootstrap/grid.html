@@ -9,6 +9,12 @@
         background: pink;
         border: 1px solid purple
     }
+    
+    .orange {
+        background: orange;
+        border: 1px double red;
+        height: 57px;
+    }
     </style>
 </head>
 
@@ -19,26 +25,48 @@
     <!-- 3. Write Nested Grids 						-->
     <!-- ========================================= 	-->
     <div class="contaier">
+        <!-- <div class="row">
+            <div class="pink col-lg-1 col-md-2">COL LG 1</div>
+            <div class="pink col-lg-1 col-md-2">COL LG 1</div>
+            <div class="pink col-lg-1 col-md-2">COL LG 1</div>
+            <div class="pink col-lg-1 col-md-2">COL LG 1</div>
+            <div class="pink col-lg-1 col-md-2">COL LG 1</div>
+            <div class="pink col-lg-1 col-md-2">COL LG 1</div>
+            <div class="pink col-lg-1 col-md-2">COL LG 1</div>
+            <div class="pink col-lg-1 col-md-2">COL LG 1</div>
+            <div class="pink col-lg-1 col-md-2">COL LG 1</div>
+            <div class="pink col-lg-1 col-md-2">COL LG 1</div>
+            <div class="pink col-lg-1 col-md-2">COL LG 1</div>
+            <div class="pink col-lg-1 col-md-2">COL LG 1</div>
+        </div> -->
         <div class="row">
-            <div class="pink col-lg-1">COL LG 1</div>
-            <div class="pink col-lg-1">COL LG 1</div>
-            <div class="pink col-lg-1">COL LG 1</div>
-            <div class="pink col-lg-1">COL LG 1</div>
-            <div class="pink col-lg-1">COL LG 1</div>
-            <div class="pink col-lg-1">COL LG 1</div>
-            <div class="pink col-lg-1">COL LG 1</div>
-            <div class="pink col-lg-1">COL LG 1</div>
-            <div class="pink col-lg-1">COL LG 1</div>
-            <div class="pink col-lg-1">COL LG 1</div>
-            <div class="pink col-lg-1">COL LG 1</div>
-            <div class="pink col-lg-1">COL LG 1</div>
+            <!-- bootstrap knows that since you set medium to 3; it will give that to the large screen as well -->
+            <div class="col-md-3 col-sm-6 pink">
+                <!-- adding 'row' creates a nested grid -->
+                <div class="row">
+                    <div class="orange col-lg-6">
+                        <h3>FIRST HALF</h3></div>
+                    <div class="orange col-lg-6">
+                        <h3>SECOND HALF</h3></div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 pink">
+                <h3>TOUR DATE !! YAY</h3>
+            </div>
+            <div class="col-md-3 col-sm-6 pink">
+                <h3>TOUR DATE !! YAY</h3>
+            </div>
+            <div class="col-md-3 col-sm-6 pink">
+                <div class="row">
+                    <div class="orange col-lg-2"></div>
+                    <div class="orange col-lg-2"></div>
+                    <div class="orange col-lg-2"></div>
+                    <div class="orange col-lg-2"></div>
+                    <div class="orange col-lg-2"></div>
+                    <div class="orange col-lg-2"></div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 pink">COL LG 4</div>
-            <div class="col-lg-4 pink">COL LG 4</div>
-            <div class="col-lg-4 pink">COL LG 4</div>
-        </div>
-    </div>
 </body>
 
 </html>
