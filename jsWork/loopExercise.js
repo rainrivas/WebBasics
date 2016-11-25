@@ -11,7 +11,7 @@ while (problemTwo < 41) {
     if (problemTwo % 2 == 0) {
         console.log(problemTwo);
     }
-    problemTwo++;
+    problemTwo++; // adding 2 to the counter can only run if you start on an even. See below
 }
 
 console.log("Print all odd numbers between 300 and 333");
@@ -31,3 +31,12 @@ while (problemFour < 51) {
     }
     problemFour++;
 }
+
+/******************************
+***** OPTIMIZED PROBLEM 2 *****
+******************************/
+// var optimized = 10;
+// while(optimized <41){
+// 	console.log(optimized);
+// 	optimized+=2;
+// }
