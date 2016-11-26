@@ -8,13 +8,21 @@ function isUniform(array) {
     var base = array[0];
     var isUniform = true;
     array.forEach(function(currentElem) {
-        if (currentElem != base) {
+        if (currentElem !== base) {
             isUniform = false;
 
         }
         return isUniform;
     });
     return isUniform;
+    // Without forEach
+    /*
+    for (i = 1; i < array.length; i++) { // start i at [1] since we already have [0]
+        if (array[i] !== base) {
+            return false;
+        }
+    } else return true;
+    */
 }
 
 function sumArray(array) {
@@ -29,7 +37,7 @@ function sumArray(array) {
 
 function max(array) {
     var max = array[0];
-    for (i = 0; i < array.length; i++) {
+    for (i = 1; i < array.length; i++) { // start i at [1] since we already have [0]
         if (array[i] > max) {
             max = array[i];
         }
