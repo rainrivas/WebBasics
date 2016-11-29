@@ -1,5 +1,7 @@
-var colorButton = document.querySelector("#colorPicker");
-
+var randomize = document.querySelector("#randomizer");
+var reset = document.querySelector("#reset");
+var toggle = document.querySelector("#toggle");
+var isPurple = false;
 function changeColor() {
     var r, g, b, colorRgb, min, max;
     min = Math.ceil(0);
@@ -7,8 +9,15 @@ function changeColor() {
     r = Math.floor(Math.random() * (max - min)) + min;
     g = Math.floor(Math.random() * (max - min)) + min;
     b = Math.floor(Math.random() * (max - min)) + min;
-    colorRgb = "rgb(" + r + "," + g + "," + b + ")";
-    document.body.style.background = colorRgb;
-    document.querySelector("h2").setAttribute.text("The color of the page is "+colorRgb);
+    return colorRgb = "rgb(" + r + "," + g + "," + b + ")";
 }
-colorButton.addEventListener("click", changeColor);
+randomize.addEventListener("click", function() {
+    document.body.style.background = changeColor();
+});
+toggle.addEventListener("click", function() {
+	document.body.classList.toggle("purple");
+});
+reset.addEventListener("click", function() {
+    document.body.removeAttribute("style");
+    document.body.removeAttribute("class");
+});

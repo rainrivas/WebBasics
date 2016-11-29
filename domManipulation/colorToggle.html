@@ -3,11 +3,19 @@
 
 <head>
     <title>Color Toggle</title>
+    <style type="text/css">
+    	.purple {
+    		background-color: purple;
+    	}
+    </style>
 </head>
 
 <body>
     <h1>Color Toggle</h1>
-    <button id="colorPicker">CLICK ME!</button>
+    <p>You have to click RESET before trying the toggle if you've clicked random color.</p>
+    <button id="randomizer">Click for Random Color!</button>
+    <button id="toggle">Click for Toggle!</button>
+    <button id="reset">Click for Reset!</button>
     <!-- We have to add the script after the elments on page have fully loaded -->
     <!-- This is the easiest way to do this for now until we learn jQuery -->
     <script type="text/javascript" src="color.js"></script>
