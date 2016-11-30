@@ -5,9 +5,13 @@
 
 var p1Button = document.querySelector("#p1");
 var p2Button = document.getElementById("p2");
+var playTo = document.querySelector
 var resetButton = document.querySelector("#reset");
 var p1Score = 0,
     p2Score = 0; // set both player scores to 0;
+var gameOver = false;
+
+
 p1Button.addEventListener("click", function() {
     p1Score += 1;
     document.querySelector("#p1Score").textContent = p1Score;
@@ -16,7 +20,7 @@ p1Button.addEventListener("click", function() {
 p2Button.addEventListener("click", function() {
     p2Score += 1;
     document.querySelector("#p2Score").textContent = p2Score;
-    console.log("Player One Scores! Score: ", p2Score);
+    console.log("Player Two Scores! Score: ", p2Score);
 });
 resetButton.addEventListener("click", function() {
     console.log("Game Reset");
