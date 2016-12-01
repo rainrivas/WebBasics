@@ -3,15 +3,16 @@
 
 <head>
     <title>Score Keeper</title>
+    <link rel="stylesheet" type="text/css" href="scoreKeeper.css">
 </head>
 
 <body>
     <!-- Score counter in header -->
     <h1><span id="p1Score">0</span> to <span id="p2Score">0</span></h1>
     <!-- hard coding play to 5 for now -->
-    <p>Playing to: 5</p>
+    <p>Playing to: <span id="winningPoint">5</span></p>
     <!-- enter play to -->
-    <input id="maxScore" type="number">
+    <input id="winning" type="number">
     <button id="p1">Player One</button>
     <button id="p2">Player Two</button>
     <button id="reset">Reset</button>
