@@ -15,9 +15,20 @@ var maxScoreDisplay = document.querySelector("p span");
 var resetButton = document.querySelector("#reset");
 var gameOver = false;
 
+function gameReset(){
+	console.log("Game Reset");
+    p1Score = p2Score = 0;
+    gameOver = false;
+    p1ScoreDisplay.textContent = p1Score;
+    p2ScoreDisplay.textContent = p2Score;
+    p1ScoreDisplay.classList.remove("winner");
+    p2ScoreDisplay.classList.remove("winner");
+}
+
 winInput.addEventListener("change", function() {
     maxScore = Number(winInput.value);
     maxScoreDisplay.textContent = maxScore;
+    gameReset();
 });
 
 p1Button.addEventListener("click", function() {
@@ -49,12 +60,4 @@ p2Button.addEventListener("click", function() {
     }
 });
 
-resetButton.addEventListener("click", function() {
-    console.log("Game Reset");
-    p1Score = p2Score = 0;
-    gameOver = false;
-    p1ScoreDisplay.textContent = p1Score;
-    p2ScoreDisplay.textContent = p2Score;
-    p1ScoreDisplay.classList.remove("winner");
-    p2ScoreDisplay.classList.remove("winner");
-});
+resetButton.addEventListener("click", gameReset);
