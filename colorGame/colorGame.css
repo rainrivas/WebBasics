@@ -1,5 +1,26 @@
-/*Temp css to show we're connected*/
-h1{
+#currentRgb{
+    /*This will also be used as the js element that we will use to change everything*/
+    background-color: rgb(50, 180, 255); /* set this to any default and make them match in all the belows*/
+}
+.jumbotron {
+    background-color: rgb(50, 180, 255); /* set this to any default and make them match in all the belows*/
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.navbar-inverse {
+    background-color: white;
+    border:0px;
+    font-weight: bolder;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: rgb(50, 180, 255);
+    padding: 5px;
+    text-align: justify;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-nav>li>a:hover{
 	color: white;
-	background-color:rgb(50,180,255);
+	background-color: rgb(50, 180, 255);
 }
