@@ -1,6 +1,7 @@
 #currentRgb{
     /*This will also be used as the js element that we will use to change everything*/
     background-color: rgb(50, 180, 255); /* set this to any default and make them match in all the belows*/
+    font-size: 1.3em;
 }
 .jumbotron {
     background-color: rgb(50, 180, 255); /* set this to any default and make them match in all the belows*/
@@ -8,8 +9,15 @@
     text-align: center;
     margin-bottom: 0px;
 }
+ #hamburger{
+    background-color: rgb(50, 180, 255);
+    /*margin: 0px 5px;*/
+ }
 
-.navbar-inverse {
+ #hamburger:hover{
+    background-color: grey;
+ }
+.navbar-inverse{
     background-color: white;
     border:0px;
     font-weight: bolder;
@@ -17,10 +25,10 @@
 .navbar-inverse .navbar-nav>li>a {
     color: rgb(50, 180, 255);
     padding: 5px;
-    text-align: justify;
+    text-align: center;
 }
 
-.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-nav>li>a:hover{
+.navbar-inverse .navbar-nav>li>a:hover{
 	color: white;
 	background-color: rgb(50, 180, 255);
 }
