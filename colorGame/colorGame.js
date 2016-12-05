@@ -56,27 +56,15 @@ easy.addEventListener("click", function() {
     for (i = difficulty; i < colorTiles.length; i++) {
         colorTiles[i].style.backgroundColor = "#232323";
     }
-    // changeColor()
-    for (i = 0; i < difficulty; i++) {
-        colorTiles[i].style.backgroundColor = changeColor();
-    }
-    // setAnswer
-    setAnswerTile();
+    // change colors and set answer
+    newColors.click();
 });
 
 // hard game event
 hard.addEventListener("click", function() {
     difficulty = 6; // set the game to easy
-    // changeColor()
-    for (i = 0; i < difficulty; i++) {
-        colorTiles[i].style.backgroundColor = changeColor();
-    }
-    // hide the 3 of tiles, set them to bg #232323
-    for (i = difficulty; i < colorTiles.length; i++) {
-        colorTiles[i].style.backgroundColor = "#232323";
-    }
-    // setAnswer
-    setAnswerTile();
+    // change colors and set answer
+    newColors.click();
 });
 
 // Handling the tile clicks
