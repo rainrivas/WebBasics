@@ -5,7 +5,7 @@ var isPurple = false;
 function changeColor() {
     var r, g, b, colorRgb, min, max;
     min = Math.ceil(0);
-    max = Math.floor(255);
+    max = Math.floor(256);
     r = Math.floor(Math.random() * (max - min)) + min;
     g = Math.floor(Math.random() * (max - min)) + min;
     b = Math.floor(Math.random() * (max - min)) + min;
