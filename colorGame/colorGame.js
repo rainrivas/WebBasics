@@ -12,8 +12,10 @@ var hard = document.querySelector("#hard");
 var colorTiles = document.querySelectorAll(".square");
 var currentRgb = document.querySelector("#currentRgb");
 var winLabel = document.getElementsByTagName("H2")[0];
-var answerRgb;
+var tryAgain = document.getElementById("tryAgain");
 var difficulty = 6; // use for answer setting, defaults to hard (6 tiles)
+var gameOver = false;
+var answerRgb;
 
 function changeColor() {
     var r, g, b, colorRgb, min, max;
@@ -35,14 +37,18 @@ function setAnswerTile() {
     return answerRgb;
 }
 
-function gameOver() {
+function endGame() {
     document.querySelector(".jumbotron").style.backgroundColor = answerRgb;
-    winLabel.hidden=false;
+    tryAgain.hidden = true;
+    winLabel.hidden = false;
+    gameOver = true;
 }
 
 // New Colors/New Game Event
 newColors.addEventListener("click", function() {
-	winLabel.hidden=true;
+    gameOver = false;
+    winLabel.hidden = true;
+    tryAgain.hidden = true;
     for (i = 0; i < difficulty; i++) {
         colorTiles[i].style.backgroundColor = changeColor();
     }
@@ -70,16 +76,19 @@ hard.addEventListener("click", function() {
 // Handling the tile clicks
 for (i = 0; i < colorTiles.length; i++) {
     colorTiles[i].addEventListener("click", function() {
-        console.log("Clicked on Tile: " + this.style.backgroundColor);
-        if (this.style.backgroundColor === answerRgb) {
-            console.log("YOU WIN");
-            gameOver();
-        } else {
-            console.log("WRONG. TRY AGAIN!");
-            this.style.backgroundColor = "#232323"; // Set bg equal to body bg
+        if (!gameOver) {
+            console.log("Clicked on Tile: " + this.style.backgroundColor);
+            if (this.style.backgroundColor === answerRgb) {
+                endGame();
+            } else {
+                tryAgain.hidden = false;
+                this.style.backgroundColor = "#232323"; // Set bg equal to body bg
+            }
         }
     });
 }
+
+// Randomize colors on page load
 document.addEventListener('DOMContentLoaded', function() {
     newColors.click();
 }, false);
