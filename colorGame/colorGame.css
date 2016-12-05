@@ -3,9 +3,12 @@ body {
     color: white;
 }
 
+h2 {
+    font-size: 8em;
+    color: black;
+}
+
 #currentRgb {
-    /*This will also be used as the js element that we will use to change everything*/
-    background-color: rgb(50, 180, 255);
     /* set this to any default and make them match in all the belows*/
     font-size: 1.3em;
 }
@@ -51,7 +54,8 @@ body {
     float: left;
     margin: 1.66%;
 }
-#squareHolder{
+
+#squareHolder {
     margin: 0 auto;
     max-width: 600px;
 }
