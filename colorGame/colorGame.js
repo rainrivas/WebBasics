@@ -39,6 +39,9 @@ function setAnswerTile() {
 
 function endGame() {
     document.querySelector(".jumbotron").style.backgroundColor = answerRgb;
+    for (i = 0; i < colorTiles.length; i++) {
+        colorTiles[i].style.backgroundColor = answerRgb;
+    }
     tryAgain.hidden = true;
     winLabel.hidden = false;
     gameOver = true;
