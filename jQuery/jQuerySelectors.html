@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Demo</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>jQuery Demo!</h1>
+    <ul>
+        <li>Thing 1</li>
+        <li>Cookies <a href="http://www.cookies.com" title="cookies.com">cookies.com</a></li>
+        <li id="delicious">Bacon Bits</li>
+    </ul>
+    <a href="https://google.com" title="Google">google.com</a>
+    <p>Can use a $("cssLocator") to selected elems.
+        <div>e.g.<code>$("#delicious")</code></div>
+    </p>
+    <p>Can also use things to modify the elements in jquery.
+        <div>such as: <code>$("h1").css("color","yellow")</code>, as opposed to css style of <code>document.querySelector("h1").style.color="orange"</code></div>
+    </p>
+    <p>Additionally, an object can be created to hold all necessary styles in the above which can then be used to manipulate any of the css props we want</p>
+    <div>
+        <code>var styles = { color:"red",background:"pink",border:"2px solid purple"}
+        <br>
+        $("h1").css(styles)</code>
+    </div>
+    <p>Multiple elements can be selected via the jQuery in a single line as well.</p>
+    <div>
+        This will turn all list elements green in a single line without the use of a loop.
+        <br>
+        <code>$("li").css("color","green")</code>
+    </div>
+    <p>Multiple elements can also take multiple styles in a single line as well.</p>
+    <div>
+        <code>$("li").css({fontSize: "20px", border: "3px dashed purple", background: "rgba(20,67,10,0.5)"})</code>
+    </div>
+</body>
+
+</html>
