@@ -4,16 +4,36 @@
 <head>
     <title>jQuery Methods</title>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <style type="text/css" media="screen">
+    	.correct{
+    		color:green;
+    	}
+    	.wrong{
+    		color: red;
+    		background:pink;
+    	}
+    	.done{
+    		color:grey;
+    		text-decoration: line-through;
+    	}
+    </style>
 </head>
 
 <body>
     <h1>jQuery Methods Demo Page</h1>
     <input type="text" placeholder="your name">
+    <select>
+        <option>Dogs</option>
+        <option>Gazeebos</option>
+        <option>Cats</option>
+        option
+    </select>
     <ul>
         <li>HiChews</li>
         <li>Twix</li>
         <li>Skittles</li>
     </ul>
+    <img src="http://i.imgur.com/zvANQeG.jpg" alt="murder death snuggle">
     <div>
         <p>Sample jQuery Methods</p>
         <div>
@@ -29,6 +49,36 @@
             <p>$("ul").html()</p>
             <p>$("ul").html("<li>I hacked your UL bra</li><li>But don't trip okay yeah</li>")</p>
             <p>We can change all LIs at once though; $("ul").html("<a href='google.com'>Click to me NOT hit google correctly</a>")</p>
+        </div>
+        <div>
+            <h2>.attr()</h2>
+            <p>$('img').css("width") <-- We just want to read the image width to start</p>
+            <p>$('img').css("width","200px") <-- Shrink it to manage</p>
+            <p>$('img').attr("src","https://c3.staticflickr.com/3/2418/2243463214_f32ab004af_b.jpg") <-- Murder Death ball five thousand</p>
+            <p>$("input").attr("type","color")</p>
+            <p>$("input").attr("type","checkbox")</p>
+            <p>$("input").attr("type","text") <-- back to text since we 'll use it in the video</p>
+            <p>Alternatively to changing all 3 images of the pine martens to murder death balls five thousand, we can just change one of them using these options</p>
+            <p>$("img:first") | $("img:first-of-type").attr("src","new LInk of Death")</p>
+            <p>Alternatively, you can use the last attribute for the last one --> $("img").last().attr("src","new URL Of death")</p>
+        </div>
+        <div>
+            <h2>.val()</h2>
+            <p>This method will work on all elements that contain a value attribute.</p>
+            <p>$("input").val()</p>
+            <p>$("input").val("Some New Magics Text")</p>
+            <p>$("select").val()</p>
+        </div>
+        <div>
+            <h2>.addClass() | .removeClass() | .toggleClass()</h2>
+            <p>$("h1").addClass("correct")</p>
+            <p>$("h1").removeClass("correct")</p>
+            <p>$("li").addClass("wrong")</p>
+            <p>$("li").removeClass("wrong")</p>
+            <p>$("li").addClass("correct)</p>
+            <p>$("li").toggleClass("correct")</p>
+            <p>$("li").first().toggleClass("done")</p>
+            <p>$("li").toggleClass("done")</p>
         </div>
     </div>
 </body>
