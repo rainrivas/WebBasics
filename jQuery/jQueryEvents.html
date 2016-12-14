@@ -17,10 +17,16 @@
         <p>$("button").click(function(){ console.log("you clicked " + $(this).text())});</p>
     </div>
     <h2>keypress()</h2>
+    <div>
+        <p>$("input[type='text']").keypress(function(){ console.log("YOU PRESSED A KEY! YAY"); });</p>
+        <p>You can listen for a specific keypress as well</p>
+        <p>$("input").keypress(function(event){ if(event.which===13){ alert("YOU HIT ENTER -- key code 13 is enter key"); } });</p>
+    </div>
     <h2>on()</h2>
     <button>Dont Click</button>
     <button>Dun Do it!</button>
     <button>I MEEN IT</button>
+    <input type="text">
 </body>
 
 </html>
