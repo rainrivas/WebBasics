@@ -5,9 +5,17 @@
     <title>jQuery Events</title>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <style type="text/css" media="screen">
-    	div{
-    		margin-left: 5%;
-    	}
+    div {
+        margin-left: 5%;
+    }
+    
+    .faded {
+        width: 200px;
+        height: 80px;
+        background: teal;
+        float: left;
+        margin: 20px;
+    }
     </style>
 </head>
 
@@ -41,10 +49,22 @@
             <li>on() will add listener for all potential future elems</li>
         </ul>
     </div>
+    <h2>Fade Example Featuring KC and the Sunshine Band</h2>
+    <p>Check the log on fade completed print out. JS is mad impatient with console.log due to it's mother flapping async nature. You can fix this by adding a callback to fade out</p>
+    <div>
+        <button id="syncFade">Click to watch baby fade and leave for good</button>
+        <button id="sheReturns">Bring my baby back</button>
+        <button id="undecided">Baby comes and goes</button>
+        <button id="toggleSlide">Baby slides</button>
+    </div>
+    <div class="faded">Hey, hey, hey Yeah Babe, I love you so I, Iwant yo to know That I'm going to miss your love</div>
+    <div class="faded">The minute you walk out that door So please don't go Don't go Don't go away Hey, hey, hey</div>
+    <div class="faded">I need your love I'm down on my knees Beggin' please, please, please Don't go Don't you hear me baby</div>
     <button>Dont Click</button>
     <button>Dun Do it!</button>
     <button>I MEEN IT</button>
     <input type="text">
+    <script type="text/javascript" src="effects.js"></script>
 </body>
 
 </html>
