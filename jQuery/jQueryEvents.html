@@ -4,6 +4,11 @@
 <head>
     <title>jQuery Events</title>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <style type="text/css" media="screen">
+    	div{
+    		margin-left: 5%;
+    	}
+    </style>
 </head>
 
 <body>
@@ -23,6 +28,19 @@
         <p>$("input").keypress(function(event){ if(event.which===13){ alert("YOU HIT ENTER -- key code 13 is enter key"); } });</p>
     </div>
     <h2>on()</h2>
+    <div>
+        <h3>Most common event listener used in jQuery</h3>
+        <p>Lets you specifiy specifically which event you want to listen for</p>
+        <p>$("h1").on("click",function(){ $(this).css("color","purple"); });</p>
+        <p>$("input").on("keypress",function(){ console.log("Key Pressed!"); });</p>
+        <p>$("button").on("mouseenter",function(){ $(this).css("font-weight","bold"); });</p>
+        <p>$("button").on("mouseleave",function(){ $(this).css("font-weight","normal"); });</p>
+        <h3>Why on() instead of click</h3>
+        <ul>
+            <li>click() only adds listeneres for existing elems</li>
+            <li>on() will add listener for all potential future elems</li>
+        </ul>
+    </div>
     <button>Dont Click</button>
     <button>Dun Do it!</button>
     <button>I MEEN IT</button>
