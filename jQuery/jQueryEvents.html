@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Events</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>jQuery Events Methods (main used)</h1>
+    <h2>click()</h2>
+    <div>
+        <p>$('h1').click(function(){ alert("H1 Clicked!"); });</p>
+        <p>$('#submit').click(function(){ console.log('something was clicked'); });</p>
+        <p>$("button").click(function({ alert("YOU CLICKED IT!"); });</p>
+        <p>$("button").click(function(){ $(this).css("background","pink");});</p>
+        <p>$("button").click(function(){ console.log("you clicked " + $(this).text())});</p>
+    </div>
+    <h2>keypress()</h2>
+    <h2>on()</h2>
+    <button>Dont Click</button>
+    <button>Dun Do it!</button>
+    <button>I MEEN IT</button>
+</body>
+
+</html>
