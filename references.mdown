@@ -9,3 +9,4 @@ Articles for References and Usefulness
 - [jQuery CDNs](https://code.jquery.com/)
 - [Official jQuery API Docs](http://api.jquery.com/)
 - [repl.it - Online REPL, Compiler & IDE](https://repl.it/languages)
+- [Linear Gradient Template](http://uigradients.com/#Blush)
